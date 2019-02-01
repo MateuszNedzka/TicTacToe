@@ -15,17 +15,17 @@ public class Player {
     }
 
     public void playerOMove() {
-        System.out.println("Player O please write coordinate x of board");
+        System.out.println("Player " + setCircleOrCross("O") + " please write coordinate x of board");
         coordinateX = input.nextInt();
-        System.out.println("Player O please write coordinate y of board");
+        System.out.println("Player " + setCircleOrCross("O") + " please write coordinate y of board");
         coordinateY = input.nextInt();
         board.updateBoard(coordinateX, coordinateY, setCircleOrCross("O"));
     }
 
     public void playerXMove() {
-        System.out.println("Player X please write coordinate x of board");
+        System.out.println("Player " + setCircleOrCross("X") + " please write coordinate x of board");
         coordinateX = input.nextInt();
-        System.out.println("Player X please write coordinate y of board");
+        System.out.println("Player " + setCircleOrCross("X") + " please write coordinate y of board");
         coordinateY = input.nextInt();
         board.updateBoard(coordinateX, coordinateY, setCircleOrCross("X"));
     }
