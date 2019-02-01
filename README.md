@@ -1,4 +1,4 @@
-# TicTacToe TODO
+# TicTacToe
 Java training
 
 TODO:
