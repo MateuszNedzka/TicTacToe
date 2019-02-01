@@ -1,4 +1,4 @@
-package cTicTacToe;
+package TicTacToe;
 
 public class Board {
 
@@ -20,8 +20,8 @@ public class Board {
         return board3X3;
     }
 
-    public void updateBoard(int indexX, int indexY, String kolkoLubKrzyzyk) {
-        board3X3[indexX][indexY] = kolkoLubKrzyzyk;
+    public void updateBoard(int indexX, int indexY, String circleOrCross) {
+        board3X3[indexX][indexY] = circleOrCross;
     }
 
     public void checkIfWin() {
@@ -58,7 +58,7 @@ public class Board {
         } else if (board3X3[0][2].equals("X") & board3X3[1][1].equals("X") & board3X3[2][0].equals("X")) {
             System.out.println("Player 'X' Win");
         } else {
-            System.out.println("REMIS");
+            System.out.println("TIE");
         }
     }
 }
