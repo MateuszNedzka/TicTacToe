@@ -10,20 +10,24 @@ public class Player {
     Board board = new Board();
     Scanner input = new Scanner(System.in);
 
+    private String setCircleOrCross(String CircleOrCross) {
+        return CircleOrCross;
+    }
+
     public void playerOMove() {
-        System.out.println("Player O please write coordinate x  board");
+        System.out.println("Player O please write coordinate x of board");
         coordinateX = input.nextInt();
-        System.out.println("Player O please write coordinate y  board");
+        System.out.println("Player O please write coordinate y of board");
         coordinateY = input.nextInt();
-        board.updateBoard(coordinateX, coordinateY, "O");
+        board.updateBoard(coordinateX, coordinateY, setCircleOrCross("O"));
     }
 
     public void playerXMove() {
-        System.out.println("Player X please write coordinate x  board");
+        System.out.println("Player X please write coordinate x of board");
         coordinateX = input.nextInt();
-        System.out.println("Player X please write coordinate y  board");
+        System.out.println("Player X please write coordinate y of board");
         coordinateY = input.nextInt();
-        board.updateBoard(coordinateX, coordinateY, "X");
+        board.updateBoard(coordinateX, coordinateY, setCircleOrCross("X"));
     }
 }
 
