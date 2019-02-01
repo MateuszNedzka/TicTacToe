@@ -9,14 +9,10 @@ public class TicTacToe {
         for (int i = 1; i <= 9; i++) {
             board.showBoard();
             player.playerOMove();
-            board.checkRowsIfWin();
-            board.checkColsIfWin();
-            board.checkDiagonalsIfWin();
+            board.checkIfWin();
             board.showBoard();
             player.playerXMove();
-            board.checkRowsIfWin();
-            board.checkColsIfWin();
-            board.checkDiagonalsIfWin();
+            board.checkIfWin();
             board.showBoard();
         }
     }
