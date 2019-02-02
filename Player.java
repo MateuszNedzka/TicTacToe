@@ -4,30 +4,22 @@ import java.util.Scanner;
 
 public class Player {
 
-    private int coordinateX;
-    private int coordinateY;
-
     Board board = new Board();
     Scanner input = new Scanner(System.in);
 
-    private String setCircleOrCross(String CircleOrCross) {
-        return CircleOrCross;
+    private int coordinateX;
+    private int coordinateY;
+    private String setCircleOrCross;
+
+    public Player(String setCircleOrCross) {
+        this.setCircleOrCross = setCircleOrCross;
     }
 
-    public void playerOMove() {
-        System.out.println("Player " + setCircleOrCross("O") + " please write coordinate x of board");
+    public void playerMove() {
+        System.out.println("Player " + setCircleOrCross + " please write coordinate x of board");
         coordinateX = input.nextInt();
-        System.out.println("Player " + setCircleOrCross("O") + " please write coordinate y of board");
+        System.out.println("Player " + setCircleOrCross + " please write coordinate y of board");
         coordinateY = input.nextInt();
-        board.updateBoard(coordinateX, coordinateY, setCircleOrCross("O"));
-    }
-
-    public void playerXMove() {
-        System.out.println("Player " + setCircleOrCross("X") + " please write coordinate x of board");
-        coordinateX = input.nextInt();
-        System.out.println("Player " + setCircleOrCross("X") + " please write coordinate y of board");
-        coordinateY = input.nextInt();
-        board.updateBoard(coordinateX, coordinateY, setCircleOrCross("X"));
+        board.updateBoard(coordinateX, coordinateY, setCircleOrCross);
     }
 }
-
