@@ -9,8 +9,8 @@ public class Player {
 
     private String playerSign;
 
-    public Player(String setCircleOrCross) {
-        this.playerSign = setCircleOrCross;
+    public Player(String playerSign) {
+        this.playerSign = playerSign;
     }
 
     public void playerMove() {
