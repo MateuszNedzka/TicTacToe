@@ -24,4 +24,5 @@ public class TicTacToe {
             winConditionalsO.checkDiagonalsIfWin();
         }
   }
+
 }

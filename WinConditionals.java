@@ -16,7 +16,7 @@ public class WinConditionals {
                 if (row[col].equals(playerSign)) {
                     counter++;
                     if (counter == 3) {
-                        System.out.println("Player " + playerSign + " win");
+                        printWinner();
                     }
                 }
             }
@@ -30,7 +30,7 @@ public class WinConditionals {
                 if (el.equals(playerSign)) {
                     counter++;
                     if (counter == 3) {
-                        System.out.println("Player " + playerSign + " win");
+                        printWinner();
                     }
                 }
             }
@@ -42,7 +42,7 @@ public class WinConditionals {
             if ((Board.getBoard3X3()[i][i]).equals(playerSign)) {
                 counter++;
                 if (counter == 3) {
-                    System.out.print("Player " + playerSign + " win");
+                    printWinner();
                 }
             }
         }
@@ -51,9 +51,13 @@ public class WinConditionals {
             if ((Board.getBoard3X3()[i][(Board.getBoard3X3().length) - 1 - i]).equals(playerSign)) {
                 counter++;
                 if (counter == 3) {
-                    System.out.print("Player " + playerSign + " win");
+                    printWinner();
                 }
             }
         }
+    }
+
+    public void printWinner() {
+        System.out.print("Player " + playerSign + " win");
     }
 }
