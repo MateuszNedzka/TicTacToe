@@ -4,8 +4,9 @@ public class TicTacToe {
     public static void main(String[] args) {
 
         Board board = new Board();
-        Player playerX = new Player("X", board);
-        Player playerO = new Player("O", board);
+        Print print = new Print();
+        Player playerX = new Player("X", board, print);
+        Player playerO = new Player("O", board, print);
 
         for (int i = 0; i <= 9; i++){
             board.showBoard();
