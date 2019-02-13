@@ -11,6 +11,6 @@ public class Print {
     }
 
     public void printWinner(String playerCharacter) {
-        System.out.print((char) 27 + "[32m" + "Player " + playerCharacter + " win" + (char) 27 + "[0m");
+        System.out.println((char) 27 + "[32m" + "Player " + playerCharacter + " win" + (char) 27 + "[0m");
     }
 }
